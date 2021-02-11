@@ -17,7 +17,6 @@ Project meant to create a simple docker image for use with creating infrastructu
     --env REGION=us-west1 \
     --env SERVICE_NAME=${SERVICE_NAME} \
     -v `pwd`/terraform:/terraform \
-    -v `pwd`/src/main/scripts:/scripts \
     -v $(HOME)/.gcp:/root/.gcp \
     ghcr.io/clickandobey/gcp-terraform-docker:1.0.0 \
         plan
